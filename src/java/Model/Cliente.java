@@ -82,12 +82,4 @@ public class Cliente {
         this.posDirEntrega = posDirEntrega;
     }
 
-<<<<<<< HEAD
-=======
-   
-    
-    
-    
-    
->>>>>>> aaron-segundoavance
 }

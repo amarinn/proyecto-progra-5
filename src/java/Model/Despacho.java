@@ -7,12 +7,6 @@ package Model;
 
 /**
  *
-<<<<<<< HEAD
- * @author Ana Marin
- */
-public class Despacho {
-    
-=======
  * @author Aaron Salas
  */
 public class Despacho {
@@ -39,5 +33,4 @@ public class Despacho {
         this.estado = estado;
     }
 
->>>>>>> aaron-segundoavance
 }

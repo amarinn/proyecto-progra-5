@@ -5,15 +5,6 @@
  */
 package Model;
 
-<<<<<<< HEAD
-/**
- *
- * @author Ana Marin
- */
-public class ClienteDB {
-    
-}
-=======
 import DAO.AccesoDatos;
 import DAO.SNMPExceptions;
 import java.sql.Connection;
@@ -62,6 +53,3 @@ public class ClienteDB {
     }
 
 }
-
-
->>>>>>> aaron-segundoavance

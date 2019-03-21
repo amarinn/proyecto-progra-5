@@ -1,14 +1,11 @@
-<<<<<<< HEAD
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 package DAO;
-=======
-package DAO;
 
->>>>>>> aaron-segundoavance
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -20,7 +17,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Properties;
-<<<<<<< HEAD
 
 import javax.naming.NamingException;
 
@@ -29,10 +25,10 @@ import javax.naming.NamingException;
  * @author Ana Marin
  */
         
-=======
+
 import javax.naming.NamingException;
 
->>>>>>> aaron-segundoavance
+
 /*
  * @(#)AccesoDatos.java   1.0 
  *
@@ -43,17 +39,6 @@ import javax.naming.NamingException;
  * con discreción y bajo permiso de la institución
  *
  */
-
-<<<<<<< HEAD
-/**
- * Clase que provee el Acceso a Datos para la Aplicación.
- * 
- * @version 1.1 28/03/2018
- * @author Jose Herrera
- */
-=======
-
->>>>>>> aaron-segundoavance
 
 
 public class AccesoDatos implements Serializable {
@@ -86,11 +71,11 @@ public class AccesoDatos implements Serializable {
         public int ejecutaSQL(String pvcSQL)throws SNMPExceptions, SQLException, NamingException, ClassNotFoundException  {
             //Crear el Driver para la conexion           
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-<<<<<<< HEAD
+
             dbConn = DriverManager.getConnection("DESKTOP-VVC1FLB\\SQLEXPRESS", "sa", "123456");
-=======
-            dbConn = DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=ProyectoComidas2", "sa", "123456");
->>>>>>> aaron-segundoavance
+
+//            dbConn = DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=ProyectoComidas2", "sa", "123456");
+
             try{
                 //Crear el statemente para la ejecucion de sentencias
                 stmt = dbConn.createStatement();
@@ -131,15 +116,10 @@ public class AccesoDatos implements Serializable {
     public ResultSet ejecutaSQLRetornaRS(String pvcSQL) throws SNMPExceptions, SQLException, NamingException, ClassNotFoundException {
         ResultSet rs = null;
      
-<<<<<<< HEAD
+
         //Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
         Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
         dbConn = DriverManager.getConnection("jdbc:sqlserver://DESKTOP-VVC1FLB\\SQLEXPRESS;databaseName=ProyectoComidas2","sa","123456");
-=======
-        Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-        dbConn = DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=ProyectoComidas2", "sa", "123456");
-        
->>>>>>> aaron-segundoavance
         try{
             //Crear el statemente para la ejecucion de sentencias
             
@@ -242,11 +222,7 @@ public class AccesoDatos implements Serializable {
            /* Obtiene la conexión hacia la base de datos */
            stmt = dbConn.createStatement();
            
-<<<<<<< HEAD
            if(getDataSource().equals("DESKTOP-VVC1FLB\\SQLEXPRESS")){
-=======
-           if(getDataSource().equals("jdbc/SNMPDataSourceDB")){
->>>>>>> aaron-segundoavance
                String formatoFechaSQL = "Alter session set NLS_DATE_FORMAT = 'dd-mm-yy'";
                stmt.execute(formatoFechaSQL);
            }         
@@ -300,11 +276,7 @@ public class AccesoDatos implements Serializable {
     try {
         stmt = dbConn.createStatement();
 
-<<<<<<< HEAD
         if(getDataSource().equals("DESKTOP-VVC1FLB\\SQLEXPRESS")){
-=======
-        if(getDataSource().equals("jdbc/SNMPDataSourceDB")){
->>>>>>> aaron-segundoavance
            String formatoFechaSQL = "Alter session set NLS_DATE_FORMAT = 'dd-mm-yy' ";
            stmt.execute(formatoFechaSQL);
         }            
@@ -322,11 +294,6 @@ public class AccesoDatos implements Serializable {
     }
 
     /**
-<<<<<<< HEAD
-    // cierra un Statement
-=======
-    * Cierra un Statement
->>>>>>> aaron-segundoavance
     * @throws SQLException
     */
     public void cerrarStatements() throws SNMPExceptions {
@@ -492,9 +459,3 @@ public class AccesoDatos implements Serializable {
     }
 
 }
-
-
-<<<<<<< HEAD
-
-=======
->>>>>>> aaron-segundoavance
