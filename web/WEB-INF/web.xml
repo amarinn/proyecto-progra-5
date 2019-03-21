@@ -19,6 +19,10 @@
         </session-timeout>
     </session-config>
     <welcome-file-list>
+<<<<<<< HEAD
         <welcome-file>Ingreso.xhtml</welcome-file>
+=======
+        <welcome-file>Principal.xhtml</welcome-file>
+>>>>>>> aaron-segundoavance
     </welcome-file-list>
 </web-app>

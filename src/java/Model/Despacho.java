@@ -7,8 +7,37 @@ package Model;
 
 /**
  *
+<<<<<<< HEAD
  * @author Ana Marin
  */
 public class Despacho {
     
+=======
+ * @author Aaron Salas
+ */
+public class Despacho {
+
+    double Monto = 0;
+    boolean estado = false;
+
+    public Despacho() {
+    }
+
+    public double getMonto() {
+        return Monto;
+    }
+
+    public void setMonto(double Monto) {
+        this.Monto = Monto;
+    }
+
+    public boolean isEstado() {
+        return estado;
+    }
+
+    public void setEstado(boolean estado) {
+        this.estado = estado;
+    }
+
+>>>>>>> aaron-segundoavance
 }

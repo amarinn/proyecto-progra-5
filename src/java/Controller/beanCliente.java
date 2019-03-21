@@ -3,37 +3,42 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Model;
+package Controller;
+
+import Model.Cliente;
+import Model.ClienteDB;
+import javax.inject.Named;
+import javax.enterprise.context.SessionScoped;
+import java.io.Serializable;
 
 /**
  *
-<<<<<<< HEAD
- * @author Ana Marin
-=======
  * @author Aaron Salas
->>>>>>> aaron-segundoavance
  */
-public class Cliente {
+@Named(value = "beanCliente")
+@SessionScoped
+public class beanCliente implements Serializable {
+
     String nombre = "";
     String apellido1 = "";
     String apellido2 = "";
     String direccion = "";
     String telefono = "";
     String posDirEntrega = "";
+    ClienteDB clienteDB = new ClienteDB();
 
-    public Cliente(String nombrep, String appelli1p, String apellid2p, String direccionp, String telefonop, String posDirEntregap) {
-        this.nombre=nombrep;
-        this.apellido1=appelli1p;
-        this.apellido2=apellid2p;
-        this.direccion=direccionp;
-        this.telefono=telefonop;
-        this.posDirEntrega=posDirEntregap;
+    public beanCliente() {
     }
 
-     public Cliente(){
-         
-     }
-     
+    public void inserta() {
+        try {
+            Cliente cli = new Cliente(nombre, apellido1, apellido2, direccion, telefono, posDirEntrega);
+            clienteDB.mvRegitroCliente(cli);
+        } catch (Exception ex) {
+
+        }
+    }
+
     public String getNombre() {
         return nombre;
     }
@@ -82,12 +87,12 @@ public class Cliente {
         this.posDirEntrega = posDirEntrega;
     }
 
-<<<<<<< HEAD
-=======
-   
-    
-    
-    
-    
->>>>>>> aaron-segundoavance
+    public ClienteDB getClienteDB() {
+        return clienteDB;
+    }
+
+    public void setClienteDB(ClienteDB clienteDB) {
+        this.clienteDB = clienteDB;
+    }
+
 }

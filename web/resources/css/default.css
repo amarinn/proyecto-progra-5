@@ -27,3 +27,26 @@ a:link:hover, a:visited:hover  {
   font-weight : bold;
   text-decoration : underline;
 }
+<<<<<<< HEAD
+=======
+
+.slider{
+    width:95%;
+    margin:0;
+    overflow:hidden;
+}
+.slider ul{
+    display:flex;
+    padding:0;
+    width:400%;
+    animation: cambio 20s infinite;
+    animation-direction:alternate;
+}
+.slider li{
+    width:100%;
+    list-style:none;
+}
+.slider img{
+    width:75%;
+}
+>>>>>>> aaron-segundoavance

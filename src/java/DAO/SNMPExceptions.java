@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -11,6 +12,12 @@ package DAO;
  */
 public class SNMPExceptions extends Exception{
      public static final int FILE_NOT_FOUND = 1;
+=======
+package DAO;
+
+public class SNMPExceptions extends Exception {
+    public static final int FILE_NOT_FOUND = 1;
+>>>>>>> aaron-segundoavance
       public static final int IO_EXCEPTION = 2;
       public static final int SQL_EXCEPTION = 3;
       public static final int CLASS_NOT_FOUND_EXCEPTION = 4;
@@ -157,6 +164,7 @@ public class SNMPExceptions extends Exception{
     }
 }
 
+<<<<<<< HEAD
 
     
     
@@ -164,3 +172,5 @@ public class SNMPExceptions extends Exception{
     
     
 
+=======
+>>>>>>> aaron-segundoavance

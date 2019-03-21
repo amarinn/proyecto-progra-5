@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <body>
+
+        <ui:composition template="./Plantilla.xhtml">
+
+            <ui:define name="top">
+
+            </ui:define>
+
+            <ui:define name="content">
+                <h:form class='form mt-5'>
+                    <div class="form-group col-md-6">
+                        <h2>Registro de Cliente</h2>
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="form-group col-md-4">
+                            <h:outputLabel for="inputEmail4">Nombre</h:outputLabel>
+                            <h:inputText  class="form-control" />
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <h:outputLabel  for="inputPassword4">Ruta de la Imagen</h:outputLabel>
+                            <h:inputText class="form-control" />
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <h:outputLabel  for="inputPassword4">Precio</h:outputLabel>
+                            <h:inputText class="form-control"   />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <h:outputLabel  for="inputAddress">CantidadMinima</h:outputLabel >
+                        <h:inputText  class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <h:outputLabel  for="inputAddress">Cantidad Producto</h:outputLabel >
+                        <h:inputText   class="form-control" id="inputAddress" />
+                    </div>
+
+                  
+
+                    <h:commandButton  value="Enviar" class="btn btn-success"></h:commandButton>
+                </h:form>               
+
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>
