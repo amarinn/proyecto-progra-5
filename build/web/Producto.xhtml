@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xxmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>Producto</title>
+    </h:head>
+    <h:body>
+        <ui:composition template="/Plantilla.xhtml">
+
+            <ui:define name="top">
+
+            </ui:define>
+
+            <ui:define name="content">
+                <br/>
+                <br/>
+                
+
+                <h:form class="card text-white bg-secondary mb-3" style="max-width: 20rem;">
+                    <div class="card-header">Hambureguesa con Queso</div    >
+                    <div class="card-body">
+                        <img style="height: 200px; width: 100%; display: block;" src="resources/IMG/Hambur.jpg" alt="Card image"/>
+                        <h:commandButton  value="Pedir" class="btn btn-success"></h:commandButton>
+                    </div>
+                </h:form>
+
+            </ui:define>
+
+        </ui:composition>
+    </h:body>
+</html>
